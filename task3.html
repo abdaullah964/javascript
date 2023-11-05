@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>calculate the Circumference of a circle using π</h1>
+    
+    <button onclick="circle()">calculate Circumference</button>
+
+    <script>
+        function circle() {
+            const radiusInput = parseFloat(prompt("Enter the radius of the circle:"));
+            if (!isNaN(radius)) {
+                const circumference = 2 * Math.PI * radius;
+                alert(`The circumference of the circle is: ${circumference}`);
+            } else {
+                alert("Invalid input. Please enter a valid number for the radius.");
+            }
+        }
+    </script>
+</body>
+</html>

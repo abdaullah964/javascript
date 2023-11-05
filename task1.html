@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calculate()">Calculate</button>
+<div id="output"></div>
+
+    <script>
+        function calculate() {
+  let operation = prompt("Enter the operation (+, -, *, /):");
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  let num2 = parseFloat(prompt("Enter the second number:"));
+
+  let result;
+  switch (operation) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    default:
+      result = "Invalid operation";
+  }
+  let output = document.getElementById("output");
+  output.innerHTML = `The result of (${operation}) number one=${num1} , number two=${num2} is: ${result}`;
+}
+
+    </script>
+</body>
+</html>

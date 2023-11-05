@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>If Statement</h1>
+
+    <script>
+        const x = parseFloat(prompt("Enter a value for x:"));
+        const y = parseFloat(prompt("Enter a value for y:"));
+
+        if (!isNaN(x) && !isNaN(y)) {
+            if (x > y) {
+                alert("Hello World");
+                console.log("Hello World");
+                document.body.innerHTML += "<p>Hello World</p>";
+            } else {
+                alert("Goodbye");
+                console.log("Goodbye");
+                document.body.innerHTML += "Goodbye";
+            }
+        } else {
+            alert("Invalid input. Please enter valid numbers.");
+        }
+    </script>
+</body>
+</html>
